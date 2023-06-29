@@ -96,3 +96,9 @@ c = torch.tensor(data, dtype=torch.long)
 print(c, c.type())
 
 # %%
+
+## Creating tensors from scratch
+# Uninitialized tensors with .empty()
+# torch.empty() returns an uninitialized tensor. 
+# Essentially a block of memory is allocated according to the size of the tensor, and any values already sitting in the block are returned. 
+# This is similar to the behavior of numpy.empty().
