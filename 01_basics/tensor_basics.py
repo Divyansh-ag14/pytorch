@@ -102,3 +102,10 @@ print(c, c.type())
 # torch.empty() returns an uninitialized tensor. 
 # Essentially a block of memory is allocated according to the size of the tensor, and any values already sitting in the block are returned. 
 # This is similar to the behavior of numpy.empty().
+
+x = torch.empty(4, 3)
+print(x)
+
+# %%
+
+# Initialized tensors with .zeros() and .ones()
