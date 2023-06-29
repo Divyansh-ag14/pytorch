@@ -68,4 +68,31 @@ print(t)
 
 arr[2]=77
 print(t)
+
+# %%
+
+## Class constructors
+# torch.Tensor()
+# torch.FloatTensor()
+# torch.LongTensor()
+
+# There's a subtle difference between using the factory function torch.tensor(data) and the class constructor torch.Tensor(data)
+# The factory function determines the dtype from the incoming data, or from a passed-in dtype argument.
+# The class constructor torch.Tensor() is simply an alias for torch.FloatTensor(data). 
+# Consider the following:
+
+data = np.array([1,2,3])
+a = torch.Tensor(data)  # Equivalent to cc = torch.FloatTensor(data)
+print(a, a.type())
+
+# %%
+
+b = torch.tensor(data)
+print(b, b.type())
+
+# %%
+
+c = torch.tensor(data, dtype=torch.long)
+print(c, c.type())
+
 # %%
