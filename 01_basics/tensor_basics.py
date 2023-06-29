@@ -40,3 +40,32 @@ print(arr2)
 x2 = torch.from_numpy(arr2)
 print(x2)
 print(x2.type())
+
+# %%
+
+# torch.from_numpy()
+# torch.as_tensor()
+# torch.tensor()
+
+# Using torch.from_numpy()
+arr = np.arange(0,5)
+t = torch.from_numpy(arr)
+print(t)
+
+# %%
+
+arr[2]=77
+print(t)
+
+# %%
+
+# Using torch.tensor()
+arr = np.arange(0,5)
+t = torch.tensor(arr)
+print(t)
+
+# %%
+
+arr[2]=77
+print(t)
+# %%
