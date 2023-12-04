@@ -109,3 +109,47 @@ print(x)
 # %%
 
 # Initialized tensors with .zeros() and .ones()
+
+x = torch.zeros(4, 3, dtype=torch.int64)
+print(x)
+
+# %%
+
+# Tensors from ranges
+x = torch.arange(0,18,2).reshape(3,3)
+print(x)
+
+# %%
+
+x = torch.linspace(0,18,12).reshape(3,4)
+print(x)
+
+# %%
+
+# Tensors from data
+x = torch.tensor([1, 2, 3, 4])
+print(x)
+print(x.dtype)
+print(x.type())
+
+# %%
+x = torch.FloatTensor([5,6,7])
+print(x)
+print(x.dtype)
+print(x.type())
+
+# %%
+x = torch.tensor([8,9,-3], dtype=torch.int)
+print(x)
+print(x.dtype)
+print(x.type())
+
+# %%
+
+ #change the dtype of an existing tensor with .type()
+print('Old:', x.type())
+
+x = x.type(torch.int64)
+
+print('New:', x.type())
+# %%
