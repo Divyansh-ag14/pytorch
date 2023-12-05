@@ -1,2 +1,3 @@
 # pytorch
-Deep Learning fundamentals using pytorch framework.
+
+Deep Learning fundamentals using pytorch framework..
